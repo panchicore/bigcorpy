@@ -1,9 +1,5 @@
 # BigCorp API
 
-
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 This is the challenge that must be completed in order to apply for a position in BigCorp
 
   - Make proxy-like API calls to the bigcorp API
