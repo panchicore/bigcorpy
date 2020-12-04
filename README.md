@@ -31,3 +31,8 @@ $ pytest
 $ uvicorn main:app --reload
 ```
 
+### Use the API
+
+* [localhost](http://localhost:8000)
+* [Test with Swagger](http://localhost:8000/docs)
+* [Test with Redoc](http://localhost:8000/redoc)
