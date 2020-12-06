@@ -19,7 +19,7 @@ This project uses a number of open source projects to work properly:
 
 This project requires [Python3] to run.
 
-Install the dependencies and start the server:
+Install the dependencies, run the tests and start the server:
 
 ```sh
 $ pip install -r requirements.txt
