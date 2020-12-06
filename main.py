@@ -113,7 +113,7 @@ def get_paths(expand):
     """
     analyze the "expand" api param so the dependencies could be looked up and satisfied using the expander strategy.
     :param expand: example: office, manager, manager.office, manager.manager.manager.manager, etc.
-    :return:
+    :return: tuple (paths, manager_paths)
     """
     paths = []
     manager_paths = []
@@ -191,8 +191,7 @@ def get_employee(
         if manager_paths:
             resolve_manager_dependencies(employees, len(manager_paths))
         for employee in employees:
-            e = expand_employee(employee, paths)
-            result = e
+            result = expand_employee(employee, paths)
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
