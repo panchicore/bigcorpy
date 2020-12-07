@@ -12,6 +12,7 @@ def chunks(lst, n):
     for i in range(0, len(lst), n):
         yield lst[i:i + n]
 
+
 def proxy_request_employees(limit=settings.DEFAULT_LIMIT, offset=settings.DEFAULT_OFFSET):
     """
     Call lambda function for the bigcorp employees records.
