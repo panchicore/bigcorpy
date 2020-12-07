@@ -38,9 +38,9 @@ def proxy_request_employees_by_id(identifiers):
     """
     employees = []
 
-    for ids in chunks(identifiers, 100):
+    for _id in chunks(identifiers, 100):
         params = {
-            'id': ids
+            'id': _id
         }
         res = requests.get(f"{settings.EMPLOYEE_API_URL_BASE}/employees", params)
         employees = employees + res.json()
